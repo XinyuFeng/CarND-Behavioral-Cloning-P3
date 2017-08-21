@@ -4,10 +4,10 @@ import numpy as np
 
 def getPath(source_path):
     filename = source_path.split('/')[-1]
-    return './data/IMG/' + filename
+    return '../data/IMG/' + filename
 
 lines = []
-with open('./data/driving_log.csv') as csvfile:
+with open('../data/driving_log.csv') as csvfile:
     reader = csv.reader(csvfile)
     for line in reader:
         if line[0] == "center":
