@@ -2,7 +2,7 @@ import csv
 import cv2
 import numpy as np
 import sklearn
-from sklean.utils import shuffle
+from sklearn.utils import shuffle
 from sklearn.model_selection import train_test_split
 from keras.models import Sequential
 from keras.optimizers import Adam
