@@ -12,7 +12,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image2]: ./examples/center.png "recovery Image"
+[image2]: ./examples/center.jpg "recovery Image"
 [image3]: ./examples/Figure_1.png "chart"
 
 
