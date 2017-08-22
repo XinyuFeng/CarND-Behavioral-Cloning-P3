@@ -14,18 +14,13 @@ The goals / steps of this project are the following:
 
 [image2]: ./examples/center.jpg "recovery Image"
 [image3]: ./examples/Figure_1.png "chart"
+[image4]: ./examples/Figure_2.png "chart"
 
 My project includes the following files:
 * model.py containing the script to create and train the model
 * drive.py for driving the car in autonomous mode
 * model.h5 containing a trained convolution neural network 
 * writeup_report.md summarizing the results
-
-
-Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
-```sh
-python drive.py model.h5
-```
 
 The model.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
 
@@ -123,7 +118,7 @@ The final step was to run the simulator to see how well the car was driving arou
 
 Besides, to get better results, I used left and right images randomly, and correct the steering degrees corresponding to different type of images. Then, I did augmentation such as flip images(model.py, line 82) and cropping(model.py, line 120).
 
-On the other hand, I use generator method to get data per patch size instead of loading the whole data into memory.(model.py, line 43)
+On the other hand, I use generator method to get data per patch size instead of loading the whole data into memory.(model.py, line 47)
 
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
@@ -163,3 +158,6 @@ I finally randomly shuffled the data set and put 20% of the data into a validati
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 10. And this's the chart of training loss and validation loss:
 ![alt text][image3]
+
+For track 2,  I increased the dataset to around 30000, with more focus on the corner of the track, But still have two corners not able to turn. That model is model1.h, and here's my loss chart:
+![alt text][image4]
