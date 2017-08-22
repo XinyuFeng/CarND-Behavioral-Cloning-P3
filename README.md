@@ -1,6 +1,8 @@
 #**Behavioral Cloning** 
-- [Track 1 video](https://youtu.be/z-xJ-1aEQisx)
+
 **Behavioral Cloning Project**
+
+[Track 1 video](https://youtu.be/z-xJ-1aEQisx)
 
 The goals / steps of this project are the following:
 * Use the simulator to collect data of good driving behavior
